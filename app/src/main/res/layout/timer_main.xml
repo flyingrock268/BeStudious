@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <!--NAVBAR-->
+
+    <LinearLayout
+        android:id="@+id/TimeInput"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/time_input_hours"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="hours"
+            android:inputType="number"
+            android:layout_weight="1"/>
+        <EditText
+            android:id="@+id/time_input_minutes"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="minutes"
+            android:inputType="number"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/time_input_seconds"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:hint="seconds"
+            android:inputType="number"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TimeInput"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="160dp"
+        android:text="@string/start" />
+
+    <TextView
+        android:id="@+id/timer_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/time_remaining_0_seconds"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="@color/light_green"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/tasksButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/checked_24"
+            android:backgroundTint="@color/dark_teal"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="25sp" />
+
+
+        <Button
+            android:id="@+id/CalendarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_calendar_month_24"
+            android:backgroundTint="@color/dark_teal"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/HomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_home_24"
+            android:backgroundTint="@color/dark_teal"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/TimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_timer_24"
+            android:backgroundTint="@color/dark_teal"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_settings_24"
+            android:backgroundTint="@color/dark_teal"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <!--NAVBAR-->
+
+</RelativeLayout>

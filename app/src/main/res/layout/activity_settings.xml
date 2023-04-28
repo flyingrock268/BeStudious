@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    tools:context=".TaskList.taskMain"
+    >
+
+<!--NAVBAR-->
+    <LinearLayout
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:backgroundTint="@color/light_green">
+
+        <Button
+            android:id="@+id/tasksButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/checked_24"
+            android:backgroundTint="@color/dark_teal"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="25sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <Button
+            android:id="@+id/CalendarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_calendar_month_24"
+            android:backgroundTint="@color/dark_teal"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="25sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/HomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_home_24"
+            android:backgroundTint="@color/dark_teal"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="25sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/TimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_timer_24"
+            android:backgroundTint="@color/dark_teal"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="25sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_settings_24"
+            android:backgroundTint="@color/dark_teal"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="25sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+    <!--NAVBAR-->
+
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="150dp"
+        android:textColor="@color/design_default_color_on_primary"
+        android:backgroundTint="@color/dark_teal"
+        android:text="@string/logout" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="300dp"
+        android:text="@string/email"
+        android:textAlignment="center"
+        android:textColor="#272727"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+</RelativeLayout>

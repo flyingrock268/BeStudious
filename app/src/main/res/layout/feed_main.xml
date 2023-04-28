@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:orientation="vertical"
+    >
+
+    <!-- Buttons above the navBar -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="60"
+        />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:clipToPadding="true"
+        android:paddingHorizontal="10dp">
+
+        <Button
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Refresh Feed" />
+
+
+        <Button
+            android:id="@+id/newPostButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="insertItem"
+            android:paddingLeft="16dp"
+            android:text="New Post" />
+
+    </LinearLayout>
+
+
+
+    <!--NAVBAR-->
+    <LinearLayout
+        android:id="@+id/navBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:gravity="center_vertical"
+        android:backgroundTint="@color/light_green"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/tasksButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/checked_24"
+            android:backgroundTint="@color/dark_teal"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="25sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <Button
+            android:id="@+id/CalendarButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_calendar_month_24"
+            android:backgroundTint="@color/dark_teal"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="25sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/HomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_home_24"
+            android:backgroundTint="@color/dark_teal"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="25sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/TimeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_timer_24"
+            android:backgroundTint="@color/dark_teal"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="25sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/ic_baseline_settings_24"
+            android:backgroundTint="@color/dark_teal"
+            android:textColor="@color/design_default_color_on_primary"
+            android:textSize="25sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+    <!--NAVBAR-->
+
+</LinearLayout>

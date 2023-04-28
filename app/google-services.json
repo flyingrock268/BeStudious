@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "75735573246",
+    "project_id": "bestudious-8ed45",
+    "storage_bucket": "bestudious-8ed45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75735573246:android:9c475b3dae7f9dc7edbbaf",
+        "android_client_info": {
+          "package_name": "com.example.beStudious"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "75735573246-ff8qmjrma8a718ntrsuf7nb5hfu7qec1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtoXO886fKQYFUwJcSr6zieIH-hYw0V8w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "75735573246-ff8qmjrma8a718ntrsuf7nb5hfu7qec1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

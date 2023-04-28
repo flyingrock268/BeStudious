@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".TaskList.newTaskSheet"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:id="@+id/PostTitle"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/new_post"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/PostContent"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/new_post"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/replyButton"
+        android:layout_width="139dp"
+        android:layout_height="wrap_content"
+        android:text="reply"
+        android:textColor="@color/white"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="@color/darker_teal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/repliesView"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="200dp" />
+
+
+</LinearLayout>
